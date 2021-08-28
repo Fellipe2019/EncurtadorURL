@@ -10,12 +10,15 @@ O sistema foi feito usando o nodejs no back-end, mysql como banco de dados, e ht
 - express => para facilitar e simplificar a criação de um servidor web
 - sequelize => para acesso ao banco de dados e realização de consultas
 - handlebars => para criação de templates para o html
-- Para instalar os pacotes rode o comandos abaixo.
--npm install express
--npm install sequelize
--npm install express-handlebars
+- Para instalar os pacotes rode o comandos abaixo, dentro da pasta aonde o projeto está
+- npm install express
+- npm install sequelize
+- npm install express-handlebars
 
-3ª Rode o comando abaixo, para iniciar o servidor no localhost na porta 3030.
+3ª Instalando a dependencia do mysql para o nodejs.
+- npm install mysql2
+
+4ª Rode o comando abaixo, para iniciar o servidor no localhost na porta 3030.
 - nodejs app.js
 
 4ª Acesse o endereço abaixo no seu navegador.
