@@ -1,0 +1,64 @@
+<head>
+    <style>
+    input#bt-encurtar-url{
+        height: 40px;
+        width: 110px;
+        font-size: 21px;
+        justify-content: center;
+    }
+    input#bt-sair{
+        height: 40px;
+        width: 80px;
+        font-size: 21px;
+        justify-content: center;
+    }
+    section#sect-listurls{
+        display: inline;
+        background: white;
+        float: left;
+        padding: 15px;
+        width: 400px;
+        border-radius: 15px;
+        margin-left: 75px;
+    }
+    section#sect-shorturls{
+        display: inline;
+        float: right;
+        background: white;
+        padding: 15px;
+        width: 300px;
+        border-radius: 15px;
+        margin-right: 75px;
+        text-align: center;
+    }
+    section#sect-logout{
+        background: whitesmoke;
+        height: 120px;
+        width: 300px;
+        position: absolute;
+        top: 450px;
+        left: 75px;
+        border-radius: 15px;
+    }
+    </style>
+</head>
+
+<header>Sistema encurtador de URL's</header>
+<section id="sect-listurls">
+    <p>Suas URLs</p>
+    <select name="sel-listurls" id="sel-listurls" size="10">
+        <option value="vl-01">Suas urlsssssssssssssssss</option>
+    </select>
+</section>
+<section id="sect-shorturls">
+    <p>Encurtar uma URL</p>
+    <p>URL: <input type="text" name="txt-url-original" id="txt-url-original"></p>
+    <input type="button" value="Encurtar" id="bt-encurtar-url">
+</section>
+    
+<section id="sect-logout">
+    <p>Para sair do Sistema</p>
+    <p>
+    <input type="button" value="Sair" id="bt-sair">
+    </p>
+</section>
