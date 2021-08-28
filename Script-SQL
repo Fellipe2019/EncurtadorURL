@@ -1,0 +1,32 @@
+1- Criando base de dados.
+
+CREATE DATABASE url_system;
+
+2 - Definindo como database em uso atualmente.
+USE url_system;
+
+3 - Criando a tabela de usuários
+CREATE TABLE users(
+    ID_user int(10) unsigned NOT NULL auto_increment,
+    name varchar(30), 
+    password varchar(100), 
+    PRIMARY KEY(ID_user)
+);
+
+4 - Criando a tabela de urls
+CREATE TABLE urls(
+    ID_url int(10) unsigned NOT NULL auto_increment,
+    url_original varchar(255), 
+    url_short varchar(255), 
+    url_data date, 
+    fk_UserUrls int(10) unsigned NOT NULL,
+    PRIMARY KEY(ID_url),
+    CONSTRAINT fk_UserUrls FOREIGN KEY(fk_UserUrls) REFERENCES users(ID_user)
+);
+
+5 - Inserindo um usuário no banco de dados url_system, na tabela users
+INSERT INTO users(name, password) VALUES('josé', '@$451482');
+
+6 - Inserindo uma url original, encurtada e a sua data na tabela urls.
+INSERT INTO urls(url_original, url_short, url_data, fk_UserUrls) VALUES('https://www.youtube.com/watch?v=QqoSDj_ntkA', 'encurtador.com.br/kmpt6', '2021-05-15', 4);
+
