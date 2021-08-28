@@ -18,4 +18,6 @@ O sistema foi feito usando o nodejs no back-end, mysql como banco de dados, e ht
 3ª Rode o comando abaixo, para iniciar o servidor no localhost na porta 3030.
 - nodejs app.js
 
+4ª Acesse o endereço abaixo no seu navegador.
+- http://localhost:3030/login
 
